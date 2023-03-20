@@ -11,7 +11,8 @@
     left:0;
     padding-bottom: 20px;
     background-image: linear-gradient(to bottom right,#68B984, #BFDB38);
-    border-bottom: 2px groove #80f1a8;
+    border-bottom: 4px solid black;
+
 }
 
 .nav-bar
@@ -38,19 +39,21 @@
 {
     box-shadow: 0 7px #176350;
     transform: translateY(5px);
-}
-
-.nav-bar li:active
-{
     border: 2px solid #BFDB38;;
 }
 
+
 .nav-bar a
 {
-    color: #BFDB38;
+    color: black;
     padding: 10px;
     font-size: large;
     text-decoration: none;
+}
+
+.nav-bar a:hover
+{
+    color: #BFDB38;
 }
 
 .git-hub
@@ -71,10 +74,6 @@
 {
     box-shadow: 0 7px #176350;
     transform: translateY(5px);
-}
-
-.git-hub:active
-{
     border: 2px solid #BFDB38;;
 }
 
@@ -95,10 +94,6 @@
 {
     box-shadow: 0 7px #176350;
     transform: translateY(5px);
-}
-
-.itch-io:active
-{
     border: 2px solid #BFDB38;;
 }
 
@@ -119,12 +114,9 @@
 {
     box-shadow: 0 7px #176350;
     transform: translateY(5px);
-}
-
-.linked-in:active
-{
     border: 2px solid #BFDB38;;
 }
+
 
 /*Navigation Bar End*/
 
@@ -137,7 +129,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    top:61.5px;
+    top: 64.5px;
     left:0;
     
     padding-bottom: 100%;
@@ -147,8 +139,9 @@
 
 .contact-me
 {
-    border: 2px solid #80f1a8;
+    border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 0 12px #176350;
     background-image: linear-gradient(to bottom,#68B984, #7b8b28);
     width: 25%;
     margin-left: 17%;
@@ -208,7 +201,7 @@
 .submit-button
 {
     font-size: large;
-    color: #BFDB38;
+    color: black;
     cursor: pointer;
     background-color: #1F8A70;
     box-shadow: 0 12px #176350;
@@ -222,6 +215,7 @@
 
 .submit-button:active
 {
+    color:#BFDB38;
     border: 2px solid #BFDB38;
     box-shadow: 0 7px #176350;
     transform: translateY(5px); 
@@ -230,10 +224,16 @@
 .contact-me iframe
 {
     width: 125%;
-    border: 2px solid #80f1a8;
+    border: 2px solid black;
+    box-shadow: 0 12px #176350;
     border-radius: 25px;
     margin-top: -400px;
     margin-left: 150%;
+}
+
+.contact-me iframe:hover
+{
+    border: 2px solid #BFDB38;    
 }
 
 /*Contact Page End*/
@@ -247,7 +247,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    top:61.5px;
+    top: 64.5px;
     left:0;
     
     padding-bottom: 100%;
@@ -293,11 +293,15 @@
 .projects img
 {
     border: 2px solid black;
+    box-shadow: 0 20px #865DFF;
+
 }
 
 .projects img:hover
 {
     border: 2px solid #FFA3FD;
+    box-shadow: 0 20px #865DFF;
+    transform: translateY(7px);
 }
 
 .projects a[id = text]
@@ -313,19 +317,19 @@
 .light-second
 {
     position: fixed;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .light-second h4
 {
     position: fixed;
-    margin-left: 9.5%;
+    margin-left: 6%;
 }
 
 .save-the-nature
 {
     position: fixed;
-    margin-left: 50%;
+    margin-left: 45%;
 }
 
 .save-the-nature h4
