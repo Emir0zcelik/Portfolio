@@ -2,6 +2,7 @@
 
 .top-section
 {
+    
     position: fixed;
     width: 100%;
     padding: 0;
@@ -21,6 +22,7 @@
 
 .nav-bar li
 {
+    
     border-radius: 5px;
     margin-top: 10px;
     border: 2px solid black;
@@ -139,7 +141,7 @@
     left:0;
     
     padding-bottom: 100%;
-
+    
     background-image: linear-gradient(to top right,#E5FDD1, #B5F1CC);
 }
 
@@ -149,9 +151,9 @@
     border-radius: 10px;
     background-image: linear-gradient(to bottom,#68B984, #7b8b28);
     width: 25%;
-    margin-left: 10%;
-    margin-top: 7%;
-    padding: 20px;
+    margin-left: 17%;
+    margin-top: 5%;
+    padding: 10px;
 }
 
 .contact-me label
@@ -212,8 +214,10 @@
     box-shadow: 0 12px #176350;
     border: 2px solid #000000;
     border-radius: 10px;
-    margin-left: 35%;
-    width: 100px;
+    margin-top: 10%;
+    margin-left: 32%;
+    width: 150px;
+    height: 50px;
 }
 
 .submit-button:active
@@ -223,12 +227,110 @@
     transform: translateY(5px); 
 }
 
-.contact-page-map
+.contact-me iframe
 {
+    width: 125%;
     border: 2px solid #80f1a8;
     border-radius: 25px;
-    margin-top: -35%;
-    margin-left: 50%;
+    margin-top: -400px;
+    margin-left: 150%;
 }
 
 /*Contact Page End*/
+
+
+/*About Me Page*/
+
+.container-about-me
+{
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top:61.5px;
+    left:0;
+    
+    padding-bottom: 100%;
+    background-image: linear-gradient(to right top,#865DFF, #E384FF);
+}
+
+.about-me h2
+{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-size:xx-large;
+    color: #191825;
+}
+
+.about-me p
+{
+    text-align: center;
+    font-size: large;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.about-me h3
+{
+    position: relative;
+    text-align: center;
+    font-size:xx-large;
+    color: #191825;
+}
+
+.about-me p[id = project-paragraph]
+{
+    margin-top: -20px;
+    margin-bottom: 75px;
+}
+
+.projects
+{
+    margin-left: 10%;
+}
+
+.projects img
+{
+    border: 2px solid black;
+}
+
+.projects img:hover
+{
+    border: 2px solid #FFA3FD;
+}
+
+.projects a[id = text]
+{
+    color: #191825;
+}
+
+.projects a[id = text]:hover
+{
+    color: #FFA3FD;
+}
+
+.light-second
+{
+    position: fixed;
+    margin-left: 10%;
+}
+
+.light-second h4
+{
+    position: fixed;
+    margin-left: 9.5%;
+}
+
+.save-the-nature
+{
+    position: fixed;
+    margin-left: 50%;
+}
+
+.save-the-nature h4
+{
+    position: fixed;
+    margin-left: 5.5%;
+}
+/*About Me Page End*/
