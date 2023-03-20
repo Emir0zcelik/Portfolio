@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fons.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Emir Ozcelik</title>
 </head>
 <body>
@@ -12,7 +16,7 @@
     <div class="top-section">
         <div class="nav-bar">
             <li>
-                <a href="main.html" >Home Page</a>
+                <a href="main.html" >Home</a>
             </li>
     
             <li>
@@ -31,17 +35,20 @@
     </div>
 
     <div class="container-contact-me">
-        <div class="contact-me">
-            <form action="contact.html" class="contact-me-form">
-                <label for="">First Name</label><br>
-                <input type="text" placeholder="Your Name"><br>
-                <label for="">Last Name</label><br>
-                <input type="text" placeholder="Your Last Name"><br>
-                <label for="">Mail Address</label><br>
-                <input type="email" placeholder="Ex:someone@gmail.com"><br>
-                <label for="">Your Message</label><br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
-                <input type="button" value="Submit" class="submit-button">
+        <div class="contact-me">            
+            <form action="https://formsubmit.co/themirozcelik@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New email received!">
+                <label for="">First Name</label>
+                <input type="text" name="First Name" placeholder="Your Name" required>
+                <label for="">Last Name</label>
+                <input type="text" name="Last Name" placeholder="Your Last Name" required>
+                <label for="">Mail Address</label>
+                <input type="email" name="email" placeholder="Ex:someone@gmail.com" required>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html">
+                <label for="">Your Message</label>
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required></textarea><br>
+                <button type="submit" class="submit-button">Submit</button>
+                <input type="hidden" name="_captcha" value="false">
             </form>
             
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.2090802017!2d32.622338340892505!3d39.903555250647784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347d520732db1%3A0xbdc57b0c0842b8d!2sAnkara!5e0!3m2!1str!2str!4v1679264661435!5m2!1str!2str" width="500" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-page-map"></iframe>

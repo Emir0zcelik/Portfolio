@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "roboFont";
+    src: url("assets/PressStart2P-Regular.ttf");
+}
+
 /*Navigation Bar*/
 
 .top-section
@@ -17,37 +22,41 @@
 
 .nav-bar
 {
-    width: 500px;
+    width: 650px;
     margin: 0 auto;
 }
 
 .nav-bar li
 {
-    
+    width: 150px;
     border-radius: 5px;
     margin-top: 10px;
     border: 2px solid black;
+    text-align: center;
     float: left;
     margin-right: 10px;
     list-style: none;
     cursor: pointer;
     background-color: #1F8A70;
     box-shadow: 0 12px #176350;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .nav-bar li:hover
 {
     box-shadow: 0 7px #176350;
     transform: translateY(5px);
-    border: 2px solid #BFDB38;;
+    border: 2px solid #BFDB38;
 }
 
 
 .nav-bar a
 {
+    font-family:"roboFont";
+    font-size:small;
     color: black;
     padding: 10px;
-    font-size: large;
     text-decoration: none;
 }
 
@@ -62,8 +71,8 @@
     cursor: pointer;
     border: 2px solid black;
     border-radius: 10px;
-    height: 22px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-color:azure;
     box-shadow: 0 12px rgb(158, 163, 163);
     margin-right: -5px;
@@ -83,8 +92,8 @@
     margin-top: 10px;
     cursor: pointer;
     border: 2px solid black;
-    height: 22px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-color: #FF8E9E;
     box-shadow: 0 12px #FF597B;
     margin-right: -5px;
@@ -103,8 +112,8 @@
     margin-top: 10px;
     cursor: pointer;
     border: 2px solid black;
-    height: 22px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-color: #19A7CE;
     box-shadow: 0 12px #146C94;
     margin-right: -5px;
@@ -121,6 +130,75 @@
 /*Navigation Bar End*/
 
 
+/*Home Page*/ 
+
+.container-home-page
+{
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 71px;
+    left:0;
+    
+    padding-bottom: 100%;
+    
+    background-image: linear-gradient(to top right,#E5FDD1, #B5F1CC);
+}
+
+.container-home-page h1[id = junior]
+{
+    font-family:"roboFont";
+    margin-left: 15%;
+    font-size: 30px;
+    text-shadow: 0 6px #BFDB38;
+}
+
+.container-home-page h1[id = name]
+{
+    font-family:"roboFont";
+    text-shadow: 0 8px #BFDB38;
+    margin-left: 15%;
+    margin-top: 15%;
+    font-size: 65px;
+}
+
+.container-home-page img
+{
+    border: 1px solid #B5F1CC;
+    box-shadow: 0 10px #E5FDD1;
+    border-radius: 100%;
+    width: 25%;
+    margin-left: 65%;
+    margin-top: -20%;
+}
+
+.resume-button
+{
+    font-family:"roboFont";
+    font-size: medium;
+    color: black;
+    cursor: pointer;
+    background-color: #1F8A70;
+    box-shadow: 0 12px #176350;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-left: -60%;
+    width: 150px;
+    height: 50px;
+}
+
+.resume-button:active
+{
+    color:#BFDB38;
+    border: 2px solid #BFDB38;
+    box-shadow: 0 7px #176350;
+    transform: translateY(5px); 
+}
+
+/*Home Page End*/ 
+
+
 /*Contact Page*/
 
 .container-contact-me
@@ -129,7 +207,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    top: 64.5px;
+    top: 71px;
     left:0;
     
     padding-bottom: 100%;
@@ -151,8 +229,9 @@
 
 .contact-me label
 {
+    font-family:"roboFont";
     color: #dde012;
-    font-size: large;
+    font-size: medium;
     margin-left: 10%;
 }
 
@@ -200,7 +279,8 @@
 
 .submit-button
 {
-    font-size: large;
+    font-family:"roboFont";
+    font-size: medium;
     color: black;
     cursor: pointer;
     background-color: #1F8A70;
@@ -247,7 +327,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    top: 64.5px;
+    top: 71px;
     left:0;
     
     padding-bottom: 100%;
@@ -256,27 +336,33 @@
 
 .about-me h2
 {
+    font-family:"roboFont";
     position: relative;
     text-align: center;
     margin-top: 30px;
     font-size:xx-large;
     color: #191825;
+    text-shadow: 0 4px #865DFF;
 }
 
 .about-me p
 {
+    font-family:"roboFont";
+    color: #191825;
+    text-shadow: 0 2px #865DFF;
     text-align: center;
-    font-size: large;
-    line-height: 30px;
-    word-spacing: 5px;
+    font-size:small;
+    line-height: 35px;
 }
 
 .about-me h3
 {
+    font-family:"roboFont";
     position: relative;
     text-align: center;
     font-size:xx-large;
     color: #191825;
+    text-shadow: 0 4px #865DFF;
 }
 
 .about-me p[id = project-paragraph]
@@ -292,7 +378,9 @@
 
 .projects img
 {
+    margin-top: -30px;
     border: 2px solid black;
+    border-radius: 12px;
     box-shadow: 0 20px #865DFF;
 
 }
@@ -306,6 +394,7 @@
 
 .projects a[id = text]
 {
+    text-shadow: 0 2px #865DFF;
     color: #191825;
 }
 
@@ -322,8 +411,11 @@
 
 .light-second h4
 {
+    font-family:"roboFont";
+    font-size: small;
     position: fixed;
-    margin-left: 6%;
+    margin-top: 30px;
+    margin-left: 4.5%;
 }
 
 .save-the-nature
@@ -334,7 +426,10 @@
 
 .save-the-nature h4
 {
+    font-family:"roboFont";
+    font-size: small;
     position: fixed;
-    margin-left: 5.5%;
+    margin-top: 30px;
+    margin-left: 3.6%;
 }
 /*About Me Page End*/
