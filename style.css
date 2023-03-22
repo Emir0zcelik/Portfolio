@@ -3,17 +3,19 @@
     src: url("assets/PressStart2P-Regular.ttf");
 }
 
+body
+{
+    background-image: linear-gradient(to right,#E5FDD1, #B5F1CC);
+}
+
 /*Navigation Bar*/
 
 .top-section
 {
-    
-    position: fixed;
+    margin-top: -10px;
+    margin-left: -10px;    
+    padding-right: 20px;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    top:0;
-    left:0;
     padding-bottom: 20px;
     background-image: linear-gradient(to bottom right,#68B984, #BFDB38);
     border-bottom: 4px solid black;
@@ -134,16 +136,7 @@
 
 .container-home-page
 {
-    position: fixed;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    top: 71px;
-    left:0;
-    
-    padding-bottom: 100%;
-    
-    background-image: linear-gradient(to top right,#E5FDD1, #B5F1CC);
+    width: 100%;    
 }
 
 .container-home-page h1[id = junior]
@@ -159,7 +152,7 @@
     font-family:"roboFont";
     text-shadow: 0 8px #BFDB38;
     margin-left: 15%;
-    margin-top: 15%;
+    margin-top: 14%;
     font-size: 65px;
 }
 
@@ -168,13 +161,15 @@
     border: 1px solid #B5F1CC;
     box-shadow: 0 10px #E5FDD1;
     border-radius: 100%;
+    margin-top: -21%;
     width: 25%;
     margin-left: 65%;
-    margin-top: -20%;
 }
 
 .resume-button
 {
+    margin-top: 1%;
+    margin-left: 30%;
     font-family:"roboFont";
     font-size: medium;
     color: black;
@@ -183,7 +178,6 @@
     box-shadow: 0 12px #176350;
     border: 2px solid #000000;
     border-radius: 10px;
-    margin-left: -60%;
     width: 150px;
     height: 50px;
 }
@@ -203,16 +197,8 @@
 
 .container-contact-me
 {
-    position: fixed;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    top: 71px;
-    left:0;
     
-    padding-bottom: 100%;
-    
-    background-image: linear-gradient(to top right,#E5FDD1, #B5F1CC);
+    width: 100%;    
 }
 
 .contact-me
@@ -323,15 +309,8 @@
 
 .container-about-me
 {
-    position: fixed;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    top: 71px;
-    left:0;
     
-    padding-bottom: 100%;
-    background-image: linear-gradient(to right top,#865DFF, #E384FF);
+    width: 100%;
 }
 
 .about-me h2
@@ -378,7 +357,6 @@
 
 .projects img
 {
-    margin-top: -30px;
     border: 2px solid black;
     border-radius: 12px;
     box-shadow: 0 20px #865DFF;
@@ -394,6 +372,7 @@
 
 .projects a[id = text]
 {
+    text-decoration: none;
     text-shadow: 0 2px #865DFF;
     color: #191825;
 }
@@ -405,7 +384,6 @@
 
 .light-second
 {
-    position: fixed;
     margin-left: 20%;
 }
 
@@ -413,23 +391,89 @@
 {
     font-family:"roboFont";
     font-size: small;
-    position: fixed;
+    
     margin-top: 30px;
-    margin-left: 4.5%;
+    margin-left: 6%;
 }
 
 .save-the-nature
 {
-    position: fixed;
-    margin-left: 45%;
+    margin-top: -19.3%;
+    margin-left: 50%;
 }
 
 .save-the-nature h4
 {
     font-family:"roboFont";
     font-size: small;
-    position: fixed;
     margin-top: 30px;
-    margin-left: 3.6%;
+    margin-left: 8%;
 }
+
+.skills
+{
+    margin-top: 3%;
+}
+
+
+.skills-table
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.skills-table th
+{   
+    font-family: "roboFont";
+    color: #191825;
+    text-shadow: 0 2px #1F8A70;
+    font-size: 16px;
+    background-color: #BFDB38; 
+    padding: 10px;
+    border: 2px solid #1F8A70;
+    
+}
+
+.skills-table td[id="blank-software"]
+{
+    border: none;
+    background-color: transparent;
+    box-shadow:none;
+}
+
+.skills-table td
+{
+    color:#191825;
+    font-family: "roboFont";
+    font-size: 12px;
+    background-color: #BFDB38; 
+    border: 2px solid #1F8A70;
+    padding: 10px;
+}
+
+.books h2
+{
+    margin-top: 4%;
+}
+
+.books p
+{
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 4%;
+    font-size: large;
+    margin-bottom: 2%;
+}
+
+.books li
+{
+    color:#191825;
+    font-family: "roboFont";
+    font-size: 14px;
+    margin-left: 9%;
+    margin-bottom: 1%;
+}
+
 /*About Me Page End*/
