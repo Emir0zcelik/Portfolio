@@ -5,7 +5,7 @@
 
 body
 {
-    background-image: linear-gradient(to right,#E5FDD1, #B5F1CC);
+    background-image: url(assets/background-retro.gif);
 }
 
 /*Navigation Bar*/
@@ -16,10 +16,9 @@ body
     margin-left: -10px;    
     padding-right: 20px;
     width: 100%;
-    padding-bottom: 20px;
-    background-image: linear-gradient(to bottom right,#68B984, #BFDB38);
-    border-bottom: 4px solid black;
-
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom right,#002455, #48d8ff);
 }
 
 .nav-bar
@@ -33,23 +32,23 @@ body
     width: 150px;
     border-radius: 5px;
     margin-top: 10px;
-    border: 2px solid black;
+    border: 2px solid #000b1a;
     text-align: center;
     float: left;
     margin-right: 10px;
     list-style: none;
     cursor: pointer;
-    background-color: #1F8A70;
-    box-shadow: 0 12px #176350;
+    background-color: #002455;
+    box-shadow: 0 12px #00132e;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .nav-bar li:hover
 {
-    box-shadow: 0 7px #176350;
+    box-shadow: 0 7px #00132e;
     transform: translateY(5px);
-    border: 2px solid #BFDB38;
+    border: 2px solid #48d8ff;
 }
 
 
@@ -57,14 +56,13 @@ body
 {
     font-family:"roboFont";
     font-size:small;
-    color: black;
-    padding: 10px;
+    color: #48d8ff;
     text-decoration: none;
 }
 
 .nav-bar a:hover
 {
-    color: #BFDB38;
+    color: white;
 }
 
 .git-hub
@@ -77,7 +75,8 @@ body
     width: 30px;
     background-color:azure;
     box-shadow: 0 12px rgb(158, 163, 163);
-    margin-right: -5px;
+    margin-left: 15px;
+    margin-right: 15px;
 
 }
 
@@ -98,7 +97,7 @@ body
     width: 30px;
     background-color: #FF8E9E;
     box-shadow: 0 12px #FF597B;
-    margin-right: -5px;
+    margin-right: 15px;
 }
 
 .itch-io:hover
@@ -118,7 +117,6 @@ body
     width: 30px;
     background-color: #19A7CE;
     box-shadow: 0 12px #146C94;
-    margin-right: -5px;
 }
 
 .linked-in:hover
@@ -144,13 +142,15 @@ body
     font-family:"roboFont";
     margin-left: 15%;
     font-size: 30px;
-    text-shadow: 0 6px #BFDB38;
+    color: #48d8ff;
+    text-shadow: 0 6px #002455;
 }
 
 .container-home-page h1[id = name]
 {
     font-family:"roboFont";
-    text-shadow: 0 8px #BFDB38;
+    color: #48d8ff;
+    text-shadow: 0 8px #002455;
     margin-left: 15%;
     margin-top: 14%;
     font-size: 65px;
@@ -158,8 +158,7 @@ body
 
 .container-home-page img
 {
-    border: 1px solid #B5F1CC;
-    box-shadow: 0 10px #E5FDD1;
+    border: 1px solid transparent;
     border-radius: 100%;
     margin-top: -21%;
     width: 25%;
@@ -172,11 +171,11 @@ body
     margin-left: 30%;
     font-family:"roboFont";
     font-size: medium;
-    color: black;
+    color: #48d8ff;
     cursor: pointer;
-    background-color: #1F8A70;
-    box-shadow: 0 12px #176350;
-    border: 2px solid #000000;
+    background-color: #002455;
+    box-shadow: 0 12px #00132e;
+    border: 2px solid #000b1a;
     border-radius: 10px;
     width: 150px;
     height: 50px;
@@ -184,134 +183,44 @@ body
 
 .resume-button:active
 {
-    color:#BFDB38;
-    border: 2px solid #BFDB38;
-    box-shadow: 0 7px #176350;
+    color:white;
+    border: 2px solid #48d8ff;
+    box-shadow: 0 7px #00132e;
     transform: translateY(5px); 
 }
 
 /*Home Page End*/ 
 
 
-/*Contact Page*/
-
-.container-contact-me
-{
-    
-    width: 100%;    
-}
-
-.contact-me
-{
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0 12px #176350;
-    background-image: linear-gradient(to bottom,#68B984, #7b8b28);
-    width: 25%;
-    margin-left: 17%;
-    margin-top: 5%;
-    padding: 10px;
-}
-
-.contact-me label
-{
-    font-family:"roboFont";
-    color: #dde012;
-    font-size: medium;
-    margin-left: 10%;
-}
-
-.contact-me input[type="text"]
-{
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin-left: 10%;
-    margin-bottom: 10px;
-    width: 75%;
-}
-
-.contact-me input[type="text"]:hover
-{
-    border: 2px solid #BFDB38;
-}
-
-.contact-me input[type="email"]
-{
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin-left: 10%;
-    width: 75%;
-    margin-bottom: 10px;
-}
-
-.contact-me input[type="email"]:hover
-{
-    border: 2px solid #BFDB38; 
-}
-
-.contact-me textarea
-{
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin-left: 10%;
-    width: 75%;
-    margin-bottom: 10px;
-}
-
-.contact-me textarea:hover
-{
-    border: 2px solid #BFDB38; 
-}
-
-.submit-button
-{
-    font-family:"roboFont";
-    font-size: medium;
-    color: black;
-    cursor: pointer;
-    background-color: #1F8A70;
-    box-shadow: 0 12px #176350;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin-top: 10%;
-    margin-left: 32%;
-    width: 150px;
-    height: 50px;
-}
-
-.submit-button:active
-{
-    color:#BFDB38;
-    border: 2px solid #BFDB38;
-    box-shadow: 0 7px #176350;
-    transform: translateY(5px); 
-}
-
-.contact-me iframe
-{
-    width: 125%;
-    border: 2px solid black;
-    box-shadow: 0 12px #176350;
-    border-radius: 25px;
-    margin-top: -400px;
-    margin-left: 150%;
-}
-
-.contact-me iframe:hover
-{
-    border: 2px solid #BFDB38;    
-}
-
-/*Contact Page End*/
-
-
 /*About Me Page*/
 
-.container-about-me
-{
-    
-    width: 100%;
+.about-me::-webkit-scrollbar {
+    display: none;
 }
+
+.about-me
+{
+    height: 860px;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section
+{
+    height: 800px;
+    scroll-snap-align: center;
+}
+
+
+.who-am-i
+{
+    margin-top: 7%;
+}
+
+
 
 .about-me h2
 {
@@ -320,15 +229,15 @@ body
     text-align: center;
     margin-top: 30px;
     font-size:xx-large;
-    color: #191825;
-    text-shadow: 0 4px #865DFF;
+    color: #48d8ff;
+    text-shadow: 0 4px #002455;
 }
 
 .about-me p
 {
     font-family:"roboFont";
-    color: #191825;
-    text-shadow: 0 2px #865DFF;
+    color: #48d8ff;
+    text-shadow: 0 2px #002455;
     text-align: center;
     font-size:small;
     line-height: 35px;
@@ -336,22 +245,25 @@ body
 
 .about-me h3
 {
+    margin-left: -10%;
+    margin-top: -20%;
     font-family:"roboFont";
-    position: relative;
     text-align: center;
     font-size:xx-large;
-    color: #191825;
-    text-shadow: 0 4px #865DFF;
+    color: #48d8ff;
+    text-shadow: 0 4px #002455;
 }
 
 .about-me p[id = project-paragraph]
 {
+    margin-left: -10%;
     margin-top: -20px;
     margin-bottom: 75px;
 }
 
 .projects
 {
+    margin-top: 8%;
     margin-left: 10%;
 }
 
@@ -359,27 +271,27 @@ body
 {
     border: 2px solid black;
     border-radius: 12px;
-    box-shadow: 0 20px #865DFF;
+    box-shadow: 0 20px #002455;
 
 }
 
 .projects img:hover
 {
-    border: 2px solid #FFA3FD;
-    box-shadow: 0 20px #865DFF;
+    border: 2px solid #48d8ff;
+    box-shadow: 0 20px #002455;
     transform: translateY(7px);
 }
 
 .projects a[id = text]
 {
     text-decoration: none;
-    text-shadow: 0 2px #865DFF;
-    color: #191825;
+    text-shadow: 0 2px #002455;
+    color: #48d8ff;
 }
 
 .projects a[id = text]:hover
 {
-    color: #FFA3FD;
+    color: white;
 }
 
 .light-second
@@ -412,7 +324,7 @@ body
 
 .skills
 {
-    margin-top: 3%;
+    margin-top: -10%;
 }
 
 
@@ -427,12 +339,12 @@ body
 .skills-table th
 {   
     font-family: "roboFont";
-    color: #191825;
-    text-shadow: 0 2px #1F8A70;
+    color: #002455;
+    text-shadow: 0 1px #48d8ff;
     font-size: 16px;
-    background-color: #BFDB38; 
+    background-color: #6cd8aa; 
     padding: 10px;
-    border: 2px solid #1F8A70;
+    border: 2px solid #48d8ff;
     
 }
 
@@ -448,14 +360,14 @@ body
     color:#191825;
     font-family: "roboFont";
     font-size: 12px;
-    background-color: #BFDB38; 
-    border: 2px solid #1F8A70;
+    background-color: #6cd8aa; 
+    border: 2px solid #48d8ff;
     padding: 10px;
 }
 
 .books h2
 {
-    margin-top: 4%;
+    margin-top: -10%;
 }
 
 .books p
@@ -469,11 +381,128 @@ body
 
 .books li
 {
-    color:#191825;
+    color: #48d8ff;
+    text-shadow: 0 2px #002455;
     font-family: "roboFont";
     font-size: 14px;
     margin-left: 9%;
     margin-bottom: 1%;
 }
 
+.books ul
+{
+}
+
+
 /*About Me Page End*/
+
+/*Contact Page*/
+
+.container-contact-me
+{
+    
+    width: 100%;    
+}
+
+.contact-me
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 12px #00132e;
+    background-image: linear-gradient(to bottom,#002455, #48d8ff);
+    width: 25%;
+    margin-left: 17%;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+.contact-me label
+{
+    font-family:"roboFont";
+    color: #48d8ff;
+    font-size: medium;
+    margin-left: 10%;
+}
+
+.contact-me input[type="text"]
+{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+.contact-me input[type="text"]:hover
+{
+    border: 2px solid #48d8ff;
+}
+
+.contact-me input[type="email"]
+{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-left: 10%;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.contact-me input[type="email"]:hover
+{
+    border: 2px solid #48d8ff; 
+}
+
+.contact-me textarea
+{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-left: 10%;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.contact-me textarea:hover
+{
+    border: 2px solid #48d8ff; 
+}
+
+.submit-button
+{
+    font-family:"roboFont";
+    font-size: medium;
+    color: #48d8ff;
+    cursor: pointer;
+    background-color: #002455;
+    box-shadow: 0 12px #00132e;
+    border: 2px solid #000b1a;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 32%;
+    width: 150px;
+    height: 50px;
+}
+
+.submit-button:active
+{
+    color:white;
+    border: 2px solid #48d8ff;
+    box-shadow: 0 7px #00132e;
+    transform: translateY(5px); 
+}
+
+.contact-me iframe
+{
+    width: 125%;
+    border: 2px solid #00132e;
+    box-shadow: 0 12px #00132e;
+    border-radius: 25px;
+    margin-top: -400px;
+    margin-left: 150%;
+}
+
+.contact-me iframe:hover
+{
+    border: 2px solid #48d8ff;    
+}
+
+/*Contact Page End*/
